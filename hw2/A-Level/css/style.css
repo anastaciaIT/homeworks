@@ -1,0 +1,56 @@
+body {
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+blockquote span {
+    background-color: #808080;
+    color: blue;
+    display: inline-block;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+blockquote span:before {
+    content: '"';
+}
+
+blockquote span:after {
+    content: '"';
+}
+
+a[href^="https"] {
+    color: red;
+}
+
+/*тут не пойму, почему выбирает несколько, я же указала последнего ребенка?*/
+.holder ul li:last-child {
+    background-color: royalblue;
+    display: inline-block;
+}
+
+.holder ul + p {
+    font-size: 26px;
+    color: salmon;
+}
+
+.text-holder h3:first-child {
+    color: pink;
+}
+
+.text-holder #greycol {
+    color: grey;
+}
+
+.text-holder div p {
+    color: red;
+}
+
+.text-holder p:nth-child(7) {
+    color: green;
+}
+
+.text-holder p.yellow {
+    color: yellow;
+}

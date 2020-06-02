@@ -1,0 +1,176 @@
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 30px 300px 30px 550px;
+    background-color: #0d5825;
+}
+
+blockquote p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+blockquote p::before {
+    content: '"';
+    color: white;
+    font-size: 25px;
+}
+
+blockquote p::after {
+    content: '"';
+    color: white;
+    font-size: 25px;
+}
+
+.author {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.card3 {
+    position: absolute;
+    margin: 130px 260px 120px 184px;
+    width: 150px;
+    height: auto;
+    transform: rotate(-26deg);
+}
+
+.card3:hover {
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+
+.card2 {
+    position: absolute;
+    margin: 138px 300px 120px 240px;
+    width: 150px;
+    height: auto;
+    transform: rotate(-7deg);
+}
+
+.card2:hover {
+    margin-top: 128px;
+    margin-bottom: 110px;
+}
+
+.card1 {
+    position: absolute;
+    margin: 165px 300px 120px 292px;
+    width: 150px;
+    height: auto;
+    transform: rotate(15deg);
+}
+
+.card1:hover {
+    margin-top: 155px;
+    margin-bottom: 110px;
+}
+
+hr {
+    height: 5px;
+    color: lightsalmon;
+    background-color: lightsalmon;
+    border: none;
+}
+
+.pink {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 30px 300px 0 650px;
+    background-color: #F08080;
+}
+
+.blue {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: -90px 400px 0 750px;
+    background-color: #6A5ACD;
+    z-index: 3;
+}
+
+.green {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: -90px 500px 30px 850px;
+    background-color: #00FF7F;
+}
+
+/*3 задание - не пойму как повлиять на 2 обьект  (текст), 
+воздействуя на 1 (линия меню) - чтобы наводя на меню, текст исчезал*/
+
+.menu {
+    display: block;
+    width: 30px;
+    height: 500px;
+    background-color: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.open {
+    padding-top: 200px;
+    padding-left: 5px;
+    font-size: 20px;
+    color: white;
+    writing-mode: vertical-rl;
+}
+
+.open:hover {
+    visibility: hidden;
+}
+
+nav {
+    color: grey;
+}
+
+.menu:hover {
+width: 250px;
+color: white;
+}
+
+nav:hover {
+    visibility: visible;
+    text-align: center;
+    color: white
+}
+
+ul {
+    list-style-image: url(https://emojio.ru/images/apple-b/1f538.png);
+}
+
+/*4 задание - пыталась, но так и не поняла*/
+
+.container {
+    display: block;
+    max-width: 700px;
+    margin: 30px 300px 30px 500px;
+}
+
+.cube1 {
+    animation: slide 3s linear 0s infinite normal;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+   
+}
+
+@keyframes slide {
+    0% {margin-top: 0px; margin-left: 0px; background-color: red;}
+    30% {margin: 500px 30px 0px 0px; background-color: blue;}
+    60% {margin: 500px 0px 0px 500px; background-color: green;}
+    90% {margin: 0px 0px 500px 500px; background-color: yellow;}
+    100% {margin-top: 0px; margin-left: 0px; background-color: red;}
+}
